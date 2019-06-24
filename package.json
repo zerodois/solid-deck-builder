@@ -1,0 +1,33 @@
+{
+  "name": "deck-editor",
+  "version": "0.0.1",
+  "description": "A descentralised Magic the Gathering deck editor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "solid",
+    "descentralised",
+    "\"deck",
+    "editor\""
+  ],
+  "author": "zerodois <https://zerodois.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.1.1-canary.55",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.2",
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.2"
+  }
+}
