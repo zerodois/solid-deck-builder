@@ -3,6 +3,7 @@ export const colors = {
     color: 'black',
     text: '#ddd',
   },
+  primary: 'aqua',
 };
 
 export const fonts = {

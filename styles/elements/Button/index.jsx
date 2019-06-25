@@ -31,7 +31,7 @@ const Button = styled.button`
 `;
 
 const Factory = ({ children, ...props }) => (
-  <Container>
+  <Container {...props}>
     <Button {...props}>
       {children}
     </Button>

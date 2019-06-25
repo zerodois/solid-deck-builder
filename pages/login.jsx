@@ -5,7 +5,7 @@ import Button from '../styles/elements/Button';
 const Login = () => (
   <Container.App>
     <Container.Center>
-      <Button>Entrar</Button>
+      <Button primary>Entrar</Button>
     </Container.Center>
   </Container.App>
 );
