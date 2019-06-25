@@ -17,9 +17,11 @@
   "author": "zerodois <https://zerodois.dev>",
   "license": "MIT",
   "dependencies": {
+    "@solid/react": "^1.6.0",
     "next": "^8.1.1-canary.55",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "solid-auth-client": "^2.3.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
