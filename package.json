@@ -19,6 +19,7 @@
   "dependencies": {
     "@solid/react": "^1.6.0",
     "next": "^8.1.1-canary.55",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "solid-auth-client": "^2.3.0",

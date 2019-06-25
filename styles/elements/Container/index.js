@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../colors';
+import { colors } from '../../theme';
 
 const Container = styled.main``;
 
@@ -14,7 +14,7 @@ const App = styled(Container)`
   height: 100%;
   flex-direction: column;
   display: flex;
-  background-color: ${colors.banner};
+  background-color: ${colors.dark.color};
 `;
 
 export default {
