@@ -1,13 +1,8 @@
 import React from 'react';
-import Container from '../styles/elements/Container';
-import Button from '../styles/elements/Button';
+import Banner from '../elements/Banner';
 
 const Login = () => (
-  <Container.App>
-    <Container.Center>
-      <Button primary>Entrar</Button>
-    </Container.Center>
-  </Container.App>
+  <Banner />
 );
 
 export default Login;
