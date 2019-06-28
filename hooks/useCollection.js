@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useWebId } from '@solid/react';
+import { load } from '../services/store';
 // import $rdf from 'rdflib';
-
-const loadCollection = async () => [];
 
 export default (store) => {
   const webId = useWebId();
@@ -11,7 +10,7 @@ export default (store) => {
   useEffect(() => {
     if (!store || !webId) return;
     (async () => {
-      const resp = await loadCollection();
+      const resp = await load(store, webId);
       // const fetcher = new $rdf.Fetcher(store);
       setColl(resp);
     })();

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Deck from '../components/Deck';
 import { useStore, useCollection } from '../hooks';
 
@@ -11,7 +11,6 @@ const App = () => {
   const push = pushDeck(setDecks);
   const store = useStore();
   const collection = useCollection(store);
-  console.log('iNFERNO', collection);
 
   return (
     <div className="flex flex-center is-full">
