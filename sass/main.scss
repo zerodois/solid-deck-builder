@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import 'login.scss';
+@import 'home.scss';
+@import 'components/deck.scss';
 
 html, body, #__next {
   height: 100%;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+  display: grid;
+  @for $cols from 1 to 10 {
+    &-#{$cols} {
+      grid-template-columns: repeat($cols, 1fr);
+    }
+  }
 }
 
 .flex {

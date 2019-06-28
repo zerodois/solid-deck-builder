@@ -1,21 +1,22 @@
-import React, { useEffect } from 'react';
-import auth from 'solid-auth-client';
+import React, { useState } from 'react';
+import Deck from '../components/Deck';
 
-const fetch = async () => {
-  const session = await auth.currentSession();
-  console.log('SESSION', session);
-  const res = await auth.fetch(session.webId);
-  const data = await res.text();
-  console.log('CONTENT', data);
-};
+const pushDeck = setter => (decks, deck = { id: Date.now() }) => (
+  setter([...decks, deck])
+);
 
 const App = () => {
-  useEffect(() => {
-    fetch();
-  });
+  const [decks, setDecks] = useState([]);
+  const push = pushDeck(setDecks);
   return (
-    <div>
+    <div className="flex flex-center is-full">
       <h1>Deck Builder</h1>
+      <button type="button" onClick={() => push(decks)}>Adicionar Deck</button>
+      <div className="grid grid-5 decks">
+        {decks.map(deck => (
+          <Deck key={deck.id} />
+        ))}
+      </div>
     </div>
   );
 };
